@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="page">
+    <h1 class="page__title"><span class="primary">Vue.js</span> To Do List</h1>
+    <h4 class="page__title text-muted">with custom events Child => Parent</h4>
+    <NotesApp></NotesApp>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import NotesApp from '@/components/NotesApp.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    NotesApp,
   },
 };
 </script>
+
+<style lang="scss">
+  @import "@/scss/_variables.scss";
+
+  .page {
+
+    &__title {
+      text-align: center;
+      margin: 0 auto;
+
+      span {
+        color: $base-color;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,25 @@
+$base-color: #42b983;
+$orange-color: #ff7800;
+$orange-hover-color: #ca5f00;
+$orange-shadow-color: #FFB36F;
+$bootstrap-warning-color: #ffc107;
+$bootstrap-danger-color: #dc3545;
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.btn-orange {
+    background-color: $orange-color;
+    border-color: $orange-color;
+
+    &:hover {
+        background-color: $orange-hover-color;
+        border-color: $orange-hover-color;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem $orange-shadow-color;
+    }
+}
